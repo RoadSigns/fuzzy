@@ -11,3 +11,9 @@ func TestLevenshtein(t *testing.T) {
 	assert.Equal(t, 8, fuzz.Levenshtein("pineapple", "watermelon"))
 	assert.Equal(t, 0, fuzz.Levenshtein("pig", "pig"))
 }
+
+func BenchmarkLevenshtein(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		fuzz.Levenshtein("kitten", "sitting")
+	}
+}
