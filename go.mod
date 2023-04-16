@@ -1,6 +1,6 @@
-module github.com/roadsigns/fuzzy-match
+module github.com/roadsigns/fuzzy
 
-go 1.20
+go 1.15
 
 require github.com/stretchr/testify v1.8.2
 

@@ -1,7 +1,7 @@
 package fuzz_test
 
 import (
-	"github.com/roadsigns/fuzzy-match/fuzz"
+	"github.com/roadsigns/fuzzy/fuzz"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
