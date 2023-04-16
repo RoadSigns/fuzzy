@@ -11,6 +11,15 @@ go get github.com/roadsigns/fuzzy
 
 ## Algorithms available
 
+### Match
+Match checks to see if the two strings are a partial match and if so return true, if they aren't then it returns a false. Match is case-sensitive.
+
+```go
+import "github.com/roadsigns/fuzzy/fuzz"
+
+fuzz.Match("wtrmln", "watermelon")
+```
+
 ### Levenshtein
 Levenshtein allows us to calculate the edit distance between the source and the target.
 Additional information for this algorithm can be found https://en.wikipedia.org/wiki/Levenshtein_distance
