@@ -1,4 +1,4 @@
-package fuzz
+package fuzzy
 
 import (
 	"unicode/utf8"

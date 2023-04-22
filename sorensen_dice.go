@@ -1,4 +1,4 @@
-package fuzz
+package fuzzy
 
 func SorensenDice(source, target string) float64 {
 	r1 := []rune(source)

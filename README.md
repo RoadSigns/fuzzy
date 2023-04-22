@@ -15,9 +15,9 @@ go get github.com/roadsigns/fuzzy
 Match checks to see if the two strings are a partial match and if so return true, if they aren't then it returns a false. Match is case-sensitive.
 
 ```go
-import "github.com/roadsigns/fuzzy/fuzz"
+import "github.com/roadsigns/fuzzy"
 
-fuzz.Match("wtrmln", "watermelon")
+fuzzy.Match("wtrmln", "watermelon")
 ```
 
 ### Levenshtein
@@ -25,9 +25,9 @@ Levenshtein allows us to calculate the edit distance between the source and the 
 Additional information for this algorithm can be found https://en.wikipedia.org/wiki/Levenshtein_distance
 
 ```go
-import "github.com/roadsigns/fuzzy/fuzz"
+import "github.com/roadsigns/fuzzy"
 
-fuzz.Levenshtien("kitten", "sitting")
+fuzzy.Levenshtien("kitten", "sitting")
 ```
 
 ### Jaro
@@ -35,26 +35,26 @@ The Jaro similarity algorithm is a measure of the similarity between two strings
 Additional information for this algorithm can be found https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance#Jaro_Similarity
 
 ```go
-import "github.com/roadsigns/fuzzy/fuzz"
+import "github.com/roadsigns/fuzzy"
 
-fuzz.Jaro("gorilla", "guerrilla")
+fuzzy.Jaro("gorilla", "guerrilla")
 ```
 
 ### Soundex
 The Soundex algorithm is a phonetic algorithm for indexing words by their pronunciation.
 Additional information for this algorithm can be found https://en.wikipedia.org/wiki/Soundex
 ```go
-import "github.com/roadsigns/fuzzy/fuzz"
+import "github.com/roadsigns/fuzzy"
 
-fuzz.Soundex("Smith")  // S530
-fuzz.Soundex("Smythe") // S530
+fuzzy.Soundex("Smith")  // S530
+fuzzy.Soundex("Smythe") // S530
 ```
 
 ### Sørensen–Dice coefficient
 The Sørensen–Dice coefficient algorithm is a similarity coefficient that is used to compare the similarity of two strings.
 Additional information for this algorithm can be found https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient
 ```go
-import "github.com/roadsigns/fuzzy/fuzz"
+import "github.com/roadsigns/fuzzy"
 
-fuzz.SorensenDice("elon musk", "colon musk")
+fuzzy.SorensenDice("elon musk", "colon musk")
 ```  

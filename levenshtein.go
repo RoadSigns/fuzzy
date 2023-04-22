@@ -1,4 +1,4 @@
-package fuzz
+package fuzzy
 
 // Levenshtein allows us to calculate the edit distance between the source and the target.
 // Additional information for this algorithm can be found https://en.wikipedia.org/wiki/Levenshtein_distance
