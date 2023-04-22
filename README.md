@@ -49,3 +49,12 @@ import "github.com/roadsigns/fuzzy/fuzz"
 fuzz.Soundex("Smith")  // S530
 fuzz.Soundex("Smythe") // S530
 ```
+
+### Sørensen–Dice coefficient
+The Sørensen–Dice coefficient algorithm is a similarity coefficient that is used to compare the similarity of two strings.
+Additional information for this algorithm can be found https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient
+```go
+import "github.com/roadsigns/fuzzy/fuzz"
+
+fuzz.Sorensen("elon musk", "colon musk")
+```  
