@@ -56,5 +56,5 @@ Additional information for this algorithm can be found https://en.wikipedia.org/
 ```go
 import "github.com/roadsigns/fuzzy/fuzz"
 
-fuzz.Sorensen("elon musk", "colon musk")
+fuzz.SorensenDice("elon musk", "colon musk")
 ```  
