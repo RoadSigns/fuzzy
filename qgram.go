@@ -1,6 +1,10 @@
 package fuzzy
 
 func QGram(source string, target string, q int) float64 {
+	if q <= 0 {
+		return 0.0
+	}
+
 	qGrams1 := generateQGrams(source, q)
 	qGrams2 := generateQGrams(target, q)
 

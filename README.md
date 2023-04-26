@@ -58,3 +58,7 @@ import "github.com/roadsigns/fuzzy"
 
 fuzzy.SorensenDice("elon musk", "colon musk")
 ```  
+
+### Q-Gram
+The Q-Gram algorithm is a similarity algorithm that It does this by dividing each string into substrings of length Q and then comparing the substrings to determine how many of them are the same in both strings.
+Additional information for this algorithm can be found https://en.wikipedia.org/wiki/N-gram
